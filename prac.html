@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-image: url(./app1/landing\ page\ 2.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            background-size: 75%;
+            background-position-y: -42px;
+            background-position-x: 0px;
+            background-attachment: fixed;
+            overflow-x: hidden;
+        }
+
+        #logo {
+            height: 80px;
+            margin-left: 1%;
+            transition: filter 0.5s ease;
+            transition: transform 0.5s ease;
+
+
+        }
+        #logo:hover{
+            filter: invert(1);
+            transform: scaleX(-1);
+
+        }
+
+        nav {
+            display: flex;
+        }
+
+        footer {
+            display: flex;
+            background-color: #6d777a;
+            justify-content: center;
+            position: relative;
+            top: 670px;
+            width: 100.8%;
+            left: -8px;
+            gap: 2%;
+            border: 2px solid black;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            font-size: larger;
+        }
+
+        a:hover {
+            color: rgb(230, 188, 134);
+            border-radius: 5px;
+            transition: background-color 0.9s ease;
+        }
+
+        #whatsapp {
+            height: 40px;
+            margin-top: 15px;
+        }
+
+        #drawer {
+            height: 40px;
+            padding-top: 10px;
+        }
+
+        #navDiv {
+            margin-left: 40%;
+            width: 70%;
+            display: flex;
+        }
+
+        #getStarted {
+            background-color: rgba(0, 0, 0, 0.3);
+            font-size: larger;
+            padding: 1em;
+            border-radius: 20px;
+            font-weight: bold;
+            transition: background-color 0.8s ease;
+        }
+
+        #getStarted:hover {
+            background-color: #2980b9;
+        }
+
+        #seeMore {
+            background-color: rgba(0, 0, 0, 0.3);
+            font-size: larger;
+            border-radius: 20px;
+            font-weight: bold;
+            padding: 0.7em;
+            margin-left: 1%;
+            transition: background-color 0.8s ease;
+        }
+
+        #seeMore:hover {
+            background-color: #2980b9;
+        }
+
+        #arrow {
+            font-size: x-large;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            padding: 10px;
+            margin-left: 4px;
+        }
+
+        #dyslexia {
+            padding-bottom: 0;
+            margin-top: 9%;
+        }
+
+        #detectives {
+            margin-top: -25px;
+            font-family: monospace;
+            overflow: hidden;
+            white-space: nowrap;
+            animation: typing 3s steps(30, end) infinite;
+        }
+
+        @keyframes typing {
+            0% {
+                width: 0;
+            }
+            80% {
+                width: 100%;
+            }
+            100% {
+                width: 100%;
+            }
+        }
+
+        .navItems {
+            margin-left: 5%;
+        }
+
+        main {
+            margin-top: 6%;
+        }
+
+        #mainDiv1 {
+            width: 50%;
+        }
+
+        #marginTopA {
+            margin-top: 3%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img id="logo" src="./app1/logo.png" alt="404">
+            <div>
+                <h1 id="dyslexia">Dyslexia</h1>
+                <h1 id="detectives">Detectives</h1>
+            </div>
+            <div id="navDiv">
+                <span></span>
+                <a class="navItems" id="marginTopA" href="#">Reading Test</a>
+                <a class="navItems" id="marginTopA" href="#">Game</a>
+                <a class="navItems" id="marginTopA" href="#">Locator</a>
+                <a class="navItems" id="marginTopA" href="#">Tutor</a>
+                <a class="navItems" id="marginTopA" href="#">Community</a>
+                <a class="navItems" id="marginTopA" href="#">Buddy</a>
+                <div style="margin-top: 1.5%; margin-left: 10%;">
+                    <img class="navItems" id="drawer" src="./app1/drawer.png" alt="404">
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div id="mainDiv1">
+            <h1>What is Dyslexia?</h1>
+            <h2>Dyslexia is a condition that affects the ability to read, write, and spell, despite normal intelligence. It can lead to difficulties in academic performance and self-esteem if not addressed. Early intervention is crucial—seek help now to ensure effective support and prevent long-term impacts on learning and development. Don't wait; the sooner you act, the better the outcomes.
+            </h2>
+            <h4>Click below to be a part of our team</h4>
+            <button id="getStarted">Get Started <span id="arrow"> &rarr;</span></button>
+            <button id="seeMore"> See more</button>
+        </div>
+    </main>
+    <footer>
+        <h2>Dyslexia Detectives &copy;</h2>
+        <a href="https://wa.me/+923111322228" target="_blank"><img id="whatsapp" src="./app1/whatsapp.png" alt="404"></a>
+        <a href="https://www.linkedin.com/in/alichughtai67/" target="_blank"><img id="whatsapp" src="./app1/linkedin.png" alt="404"></a>
+    </footer>
+</body>
+
+</html>
