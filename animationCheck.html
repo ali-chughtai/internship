@@ -8,15 +8,25 @@
     <style>
         body {
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            background-image: url(./app1/landing\ page\ 2.png);
+            background-image: url(./app1/artificial-intelligence-2228610_1920.jpg);
             background-repeat: no-repeat;
             background-position: center;
-            background-size: contain;
-            background-size: 75%;
-            background-position-y: -42px;
-            background-position-x: 0px;
+            background-size: cover;
+            background-size: 65%;
+            background-position-y:4em;
+            background-position-x:50em;
+            background-color: rgb(113, 115, 117);
+            /* background-position-x: ; */
             background-attachment: fixed;
             overflow-x: hidden;
+            min-height: 100vh;
+            /* Ensure body takes up at least the full viewport height */
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            margin: 0;
+
+
         }
 
         #logo {
@@ -27,7 +37,8 @@
 
 
         }
-        #logo:hover{
+
+        #logo:hover {
             filter: invert(1);
             transform: scaleX(-1);
 
@@ -39,14 +50,12 @@
 
         footer {
             display: flex;
-            background-color: #6d777a;
+            background-color: #141416;
+            ;
+            color: white;
             justify-content: center;
-            position: relative;
-            top: 670px;
-            width: 100.8%;
-            left: -8px;
             gap: 2%;
-            border: 2px solid black;
+            width: 100%;
         }
 
         a {
@@ -66,10 +75,16 @@
             height: 40px;
             margin-top: 15px;
         }
+        #linkedIn {
+            height: 40px;
+            margin-top: 15px;
+        }
 
         #drawer {
             height: 40px;
             padding-top: 10px;
+            margin-left: 5%;
+
         }
 
         #navDiv {
@@ -130,9 +145,11 @@
             0% {
                 width: 0;
             }
+
             80% {
                 width: 100%;
             }
+
             100% {
                 width: 100%;
             }
@@ -143,6 +160,8 @@
         }
 
         main {
+            flex: 1;
+            /* Allows main content to grow and push footer */
             margin-top: 6%;
         }
 
@@ -150,38 +169,146 @@
             width: 50%;
         }
 
-        #marginTopA {
-            margin-top: 3%;
+
+
+        @media screen and (max-width: 430px) {
+          body{
+            overflow-x: hidden;
+            overflow-y: hidden;
+            background-image: url(./app1/brain-1300499_1280.png);
+            background-position: 5em 6em ;
+            background-color: white;
+          }
+            nav,#navDiv{
+            flex-direction: column;
+            align-content: center;
+            align-items: center;
+            flex: 1;
+          }
+          #logo{
+            height: 15%;
+            width: 15%;
+            margin-top: -0.6em ;
+            margin-left:auto ;
+            /* justify-self: right; */
+          }
+          footer{
+            flex-direction: column;
+            align-items: center;
+            /* padding-bottom: 1%; */
+          }
+          main{
+            font-size: 0.7em;
+            font-weight: lighter;
+            padding: 2%;
+            justify-content: center;
+            align-items: center;
+          }
+          
+          #mainDiv1{
+            margin-top: -19%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: beige;
+            padding: 0.5em;
+            margin-left: -2.7%;
+            border-radius: 5px;
+
+          }
+          #mainDiv1,h1,h2,h4{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            align-self: center;
+            justify-content: center;
+          }
+          header{
+            margin: 0;;
+          }
+          #drawer{
+            position: relative;
+            top: -8.6em;
+            right: 17em;
+            display: block !important;
+          }
+          #mobileHeading{
+            position: relative;
+            top: -4em;
+          }
+          .navItems{
+            display: none;
+          }
+          #getStarted{
+            font-size: large;
+            padding: 0.6em;
+            width: 50%;
+            border-radius: 5px;
+            margin-left: 25%;
+            margin-bottom: 3%;
+            background-color:rgb(252, 254, 255,0.9);
+            ;
+          }
+          #arrow {
+            font-size: large;
+            font-weight: bold;
+            border-radius: 5px;
+            padding: 7px;
+            margin-left: 4px;
+            background-color:rgb(252, 254, 255,0.9);
+
+        }
+        #seeMore {
+            font-size: large;
+            border-radius: 5px;
+            font-weight: bold;
+            padding: 0.6em;
+            width: 50%;
+            margin-left: 25%;
+            margin-bottom: 2%;
+            background-color:rgb(252, 254, 255,0.9);
+
+
+        }#whatsapp{
+            margin-left: -3em;
+        }
+        #linkedIn{
+            position: relative;
+            top: -3.05em;
+            right: -2em;   
+        }
+         
         }
     </style>
 </head>
 
 <body>
-    <header>
+    <header style="margin: 1em;">
         <nav>
             <img id="logo" src="./app1/logo.png" alt="404">
-            <div>
+            <div id="mobileHeading">
                 <h1 id="dyslexia">Dyslexia</h1>
                 <h1 id="detectives">Detectives</h1>
             </div>
             <div id="navDiv">
-                <span></span>
-                <a class="navItems" id="marginTopA" href="#">Reading Test</a>
-                <a class="navItems" id="marginTopA" href="#">Game</a>
-                <a class="navItems" id="marginTopA" href="#">Locator</a>
-                <a class="navItems" id="marginTopA" href="#">Tutor</a>
-                <a class="navItems" id="marginTopA" href="#">Community</a>
-                <a class="navItems" id="marginTopA" href="#">Buddy</a>
+                <a class="navItems" style="margin-top: 3%;" href="#">Reading Test</a>
+                <a class="navItems" style="margin-top: 3%;" href="#">Game</a>
+                <a class="navItems" style="margin-top: 3%;" href="#">Locator</a>
+                <a class="navItems" style="margin-top: 3%;" href="#">Tutor</a>
+                <a class="navItems" style="margin-top: 3%;" href="#">Community</a>
+                <a class="navItems" style="margin-top: 3%;" href="#">Buddy</a>
                 <div style="margin-top: 1.5%; margin-left: 10%;">
-                    <img class="navItems" id="drawer" src="./app1/drawer.png" alt="404">
+                    <img  id="drawer" src="./app1/drawer.png" alt="404">
                 </div>
             </div>
         </nav>
     </header>
-    <main>
+    <main style="margin-left: 1em; margin-top: 5em;">
         <div id="mainDiv1">
             <h1>What is Dyslexia?</h1>
-            <h2>Dyslexia is a condition that affects the ability to read, write, and spell, despite normal intelligence. It can lead to difficulties in academic performance and self-esteem if not addressed. Early intervention is crucial—seek help now to ensure effective support and prevent long-term impacts on learning and development. Don't wait; the sooner you act, the better the outcomes.
+            <h2>Dyslexia is a condition that affects the ability to read, write, and spell, despite normal intelligence.
+                It can lead to difficulties in academic performance and self-esteem if not addressed. Early intervention
+                is crucial—seek help now to ensure effective support and prevent long-term impacts on learning and
+                development. Don't wait; the sooner you act, the better the outcomes.
             </h2>
             <h4>Click below to be a part of our team</h4>
             <button id="getStarted">Get Started <span id="arrow"> &rarr;</span></button>
@@ -190,11 +317,11 @@
     </main>
     <footer>
         <h2>Dyslexia Detectives &copy;</h2>
-        <a href="https://wa.me/+923111322228" target="_blank"><img id="whatsapp" src="./app1/whatsapp.png" alt="404"></a>
-        <a href="https://www.linkedin.com/in/alichughtai67/" target="_blank"><img id="whatsapp" src="./app1/linkedin.png" alt="404"></a>
+        <a href="https://wa.me/+923111322228" target="_blank"><img id="whatsapp" src="./app1/whatsapp.png"
+                alt="404"></a>
+        <a href="https://www.linkedin.com/in/alichughtai67/" target="_blank"><img id="linkedIn"
+                src="./app1/linkedin.png" alt="404"></a>
     </footer>
 </body>
 
 </html>
-
-// just checking if git updates the codes or noty
