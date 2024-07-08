@@ -1,327 +1,327 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing page</title>
     <style>
+      body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+        background-image: url(./app1/artificial-intelligence-2228610_1920.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-size: 65%;
+        background-position-y: 4em;
+        background-position-x: 50em;
+        background-color: rgb(113, 115, 117);
+        background-attachment: fixed;
+        overflow-x: hidden;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 0;
+        margin: 0;
+      }
+
+      #logo {
+        height: 80px;
+        margin-left: 1%;
+        transition: filter 0.5s ease;
+        transition: transform 0.5s ease;
+      }
+
+      #logo:hover {
+        filter: invert(1);
+        transform: scaleX(-1);
+      }
+
+      nav {
+        display: flex;
+      }
+
+      footer {
+        display: flex;
+        background-color: #141416;
+        color: white;
+        justify-content: center;
+        gap: 2%;
+        width: 100%;
+      }
+
+      a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        font-size: larger;
+      }
+
+      a:hover {
+        color: rgb(230, 188, 134);
+        border-radius: 5px;
+        transition: background-color 0.9s ease;
+      }
+
+      #whatsapp {
+        height: 40px;
+        margin-top: 15px;
+      }
+      #linkedIn {
+        height: 40px;
+        margin-top: 15px;
+      }
+
+      #drawer {
+        height: 40px;
+        padding-top: 10px;
+        margin-left: 5%;
+        display: none;
+      }
+
+      #navDiv {
+        margin-left: 40%;
+        width: 70%;
+        display: flex;
+      }
+
+      #getStarted {
+        background-color: rgba(0, 0, 0, 0.3);
+        font-size: larger;
+        padding: 1em;
+        border-radius: 20px;
+        font-weight: bold;
+        transition: background-color 0.8s ease;
+      }
+
+      #getStarted:hover {
+        background-color: #2980b9;
+      }
+
+      #seeMore {
+        background-color: rgba(0, 0, 0, 0.3);
+        font-size: larger;
+        border-radius: 20px;
+        font-weight: bold;
+        padding: 0.7em;
+        margin-left: 1%;
+        transition: background-color 0.8s ease;
+      }
+
+      #seeMore:hover {
+        background-color: #2980b9;
+      }
+
+      #arrow {
+        font-size: x-large;
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+        padding: 10px;
+        margin-left: 4px;
+      }
+
+      #dyslexia {
+        padding-bottom: 0;
+        margin-top: 9%;
+      }
+
+      #detectives {
+        margin-top: -25px;
+        font-family: monospace;
+        overflow: hidden;
+        white-space: nowrap;
+        animation: typing 3s steps(30, end) infinite;
+      }
+
+      @keyframes typing {
+        0% {
+          width: 0;
+        }
+
+        80% {
+          width: 100%;
+        }
+
+        100% {
+          width: 100%;
+        }
+      }
+
+      .navItems {
+        margin-left: 5%;
+      }
+
+      main {
+        flex: 1;
+        /* Allows main content to grow and push footer */
+        margin-top: 6%;
+      }
+
+      #mainDiv1 {
+        width: 50%;
+      }
+
+      @media screen and (max-width: 430px) {
         body {
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            background-image: url(./app1/artificial-intelligence-2228610_1920.jpg);
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            background-size: 65%;
-            background-position-y:4em;
-            background-position-x:50em;
-            background-color: rgb(113, 115, 117);
-            /* background-position-x: ; */
-            background-attachment: fixed;
-            overflow-x: hidden;
-            min-height: 100vh;
-            /* Ensure body takes up at least the full viewport height */
-            display: flex;
-            flex-direction: column;
-            padding: 0;
-            margin: 0;
-
-
+          background-image: url(./app1/brain-1300499_1280.png);
+          background-position: 5em 6em;
+          background-color: white;
+          display: flex;
+          flex-wrap: wrap;
         }
-
-        #logo {
-            height: 80px;
-            margin-left: 1%;
-            transition: filter 0.5s ease;
-            transition: transform 0.5s ease;
-
-
-        }
-
-        #logo:hover {
-            filter: invert(1);
-            transform: scaleX(-1);
-
-        }
-
-        nav {
-            display: flex;
-        }
-
-        footer {
-            display: flex;
-            background-color: #141416;
-            ;
-            color: white;
-            justify-content: center;
-            gap: 2%;
-            width: 100%;
-        }
-
-        a {
-            text-decoration: none;
-            color: black;
-            font-weight: bold;
-            font-size: larger;
-        }
-
-        a:hover {
-            color: rgb(230, 188, 134);
-            border-radius: 5px;
-            transition: background-color 0.9s ease;
-        }
-
-        #whatsapp {
-            height: 40px;
-            margin-top: 15px;
-        }
-        #linkedIn {
-            height: 40px;
-            margin-top: 15px;
-        }
-
-        #drawer {
-            height: 40px;
-            padding-top: 10px;
-            margin-left: 5%;
-
-        }
-
+        nav,
         #navDiv {
-            margin-left: 40%;
-            width: 70%;
-            display: flex;
+          flex-direction: column;
+          align-content: center;
+          align-items: center;
+          flex: 1;
         }
-
-        #getStarted {
-            background-color: rgba(0, 0, 0, 0.3);
-            font-size: larger;
-            padding: 1em;
-            border-radius: 20px;
-            font-weight: bold;
-            transition: background-color 0.8s ease;
+        #logo {
+          height: 15%;
+          width: 15%;
+          margin-top: -0.6em;
+          margin-left: auto;
+          /* justify-self: right; */
         }
-
-        #getStarted:hover {
-            background-color: #2980b9;
+        footer {
+          flex-direction: column;
+          align-items: center;
+          /* padding-bottom: 1%; */
         }
-
-        #seeMore {
-            background-color: rgba(0, 0, 0, 0.3);
-            font-size: larger;
-            border-radius: 20px;
-            font-weight: bold;
-            padding: 0.7em;
-            margin-left: 1%;
-            transition: background-color 0.8s ease;
-        }
-
-        #seeMore:hover {
-            background-color: #2980b9;
-        }
-
-        #arrow {
-            font-size: x-large;
-            background-color: rgba(255, 255, 255, 0.2);
-            border-radius: 10px;
-            padding: 10px;
-            margin-left: 4px;
-        }
-
-        #dyslexia {
-            padding-bottom: 0;
-            margin-top: 9%;
-        }
-
-        #detectives {
-            margin-top: -25px;
-            font-family: monospace;
-            overflow: hidden;
-            white-space: nowrap;
-            animation: typing 3s steps(30, end) infinite;
-        }
-
-        @keyframes typing {
-            0% {
-                width: 0;
-            }
-
-            80% {
-                width: 100%;
-            }
-
-            100% {
-                width: 100%;
-            }
-        }
-
-        .navItems {
-            margin-left: 5%;
-        }
-
         main {
-            flex: 1;
-            /* Allows main content to grow and push footer */
-            margin-top: 6%;
+          font-size: 0.7em;
+          font-weight: lighter;
+          padding: 2%;
+          justify-content: center;
+          align-items: center;
         }
 
         #mainDiv1 {
-            width: 50%;
+          margin-top: -19%;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          background-color: rgba(0, 0, 0, 0.6);
+          color: beige;
+          padding: 0.5em;
+          margin-left: -2.7%;
+          border-radius: 5px;
         }
-
-
-
-        @media screen and (max-width: 430px) {
-          body{
-            overflow-x: hidden;
-            overflow-y: hidden;
-            background-image: url(./app1/brain-1300499_1280.png);
-            background-position: 5em 6em ;
-            background-color: white;
-          }
-            nav,#navDiv{
-            flex-direction: column;
-            align-content: center;
-            align-items: center;
-            flex: 1;
-          }
-          #logo{
-            height: 15%;
-            width: 15%;
-            margin-top: -0.6em ;
-            margin-left:auto ;
-            /* justify-self: right; */
-          }
-          footer{
-            flex-direction: column;
-            align-items: center;
-            /* padding-bottom: 1%; */
-          }
-          main{
-            font-size: 0.7em;
-            font-weight: lighter;
-            padding: 2%;
-            justify-content: center;
-            align-items: center;
-          }
-          
-          #mainDiv1{
-            margin-top: -19%;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            background-color: rgba(0, 0, 0, 0.6);
-            color: beige;
-            padding: 0.5em;
-            margin-left: -2.7%;
-            border-radius: 5px;
-
-          }
-          #mainDiv1,h1,h2,h4{
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            align-self: center;
-            justify-content: center;
-          }
-          header{
-            margin: 0;;
-          }
-          #drawer{
-            position: relative;
-            top: -8.6em;
-            right: 17em;
-            display: block !important;
-          }
-          #mobileHeading{
-            position: relative;
-            top: -4em;
-          }
-          .navItems{
-            display: none;
-          }
-          #getStarted{
-            font-size: large;
-            padding: 0.6em;
-            width: 50%;
-            border-radius: 5px;
-            margin-left: 25%;
-            margin-bottom: 3%;
-            background-color:rgb(252, 254, 255,0.9);
-            ;
-          }
-          #arrow {
-            font-size: large;
-            font-weight: bold;
-            border-radius: 5px;
-            padding: 7px;
-            margin-left: 4px;
-            background-color:rgb(252, 254, 255,0.9);
-
+        #mainDiv1,
+        h1,
+        h2,
+        h4 {
+          font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+            sans-serif;
+          align-self: center;
+          justify-content: center;
+        }
+        header {
+          margin: 0;
+        }
+        #drawer {
+          position: relative;
+          top: -8.6em;
+          right: 17em;
+          display: block !important;
+        }
+        #mobileHeading {
+          position: relative;
+          top: -4em;
+        }
+        .navItems {
+          display: none;
+        }
+        #getStarted {
+          font-size: large;
+          padding: 0.6em;
+          width: 50%;
+          border-radius: 5px;
+          margin-left: 25%;
+          margin-bottom: 3%;
+          background-color: rgb(252, 254, 255, 0.9);
+        }
+        #arrow {
+          font-size: large;
+          font-weight: bold;
+          border-radius: 5px;
+          padding: 7px;
+          margin-left: 4px;
+          background-color: rgb(252, 254, 255, 0.9);
         }
         #seeMore {
-            font-size: large;
-            border-radius: 5px;
-            font-weight: bold;
-            padding: 0.6em;
-            width: 50%;
-            margin-left: 25%;
-            margin-bottom: 2%;
-            background-color:rgb(252, 254, 255,0.9);
-
-
-        }#whatsapp{
-            margin-left: -3em;
+          font-size: large;
+          border-radius: 5px;
+          font-weight: bold;
+          padding: 0.6em;
+          width: 50%;
+          margin-left: 25%;
+          margin-bottom: 2%;
+          background-color: rgb(252, 254, 255, 0.9);
         }
-        #linkedIn{
-            position: relative;
-            top: -3.05em;
-            right: -2em;   
+        #whatsapp {
+          margin-left: -3em;
         }
-         
+        #linkedIn {
+          position: relative;
+          top: -3.05em;
+          right: -2em;
         }
+      }
     </style>
-</head>
+  </head>
 
-<body>
-    <header style="margin: 1em;">
-        <nav>
-            <img id="logo" src="./app1/logo.png" alt="404">
-            <div id="mobileHeading">
-                <h1 id="dyslexia">Dyslexia</h1>
-                <h1 id="detectives">Detectives</h1>
-            </div>
-            <div id="navDiv">
-                <a class="navItems" style="margin-top: 3%;" href="#">Reading Test</a>
-                <a class="navItems" style="margin-top: 3%;" href="#">Game</a>
-                <a class="navItems" style="margin-top: 3%;" href="#">Locator</a>
-                <a class="navItems" style="margin-top: 3%;" href="#">Tutor</a>
-                <a class="navItems" style="margin-top: 3%;" href="#">Community</a>
-                <a class="navItems" style="margin-top: 3%;" href="#">Buddy</a>
-                <div style="margin-top: 1.5%; margin-left: 10%;">
-                    <img  id="drawer" src="./app1/drawer.png" alt="404">
-                </div>
-            </div>
-        </nav>
-    </header>
-    <main style="margin-left: 1em; margin-top: 5em;">
-        <div id="mainDiv1">
-            <h1>What is Dyslexia?</h1>
-            <h2>Dyslexia is a condition that affects the ability to read, write, and spell, despite normal intelligence.
-                It can lead to difficulties in academic performance and self-esteem if not addressed. Early intervention
-                is crucial—seek help now to ensure effective support and prevent long-term impacts on learning and
-                development. Don't wait; the sooner you act, the better the outcomes.
-            </h2>
-            <h4>Click below to be a part of our team</h4>
-            <button id="getStarted">Get Started <span id="arrow"> &rarr;</span></button>
-            <button id="seeMore"> See more</button>
+  <body>
+    <header style="margin: 1em">
+      <nav>
+        <img id="logo" src="./app1/logo.png" alt="404" />
+        <div id="mobileHeading">
+          <h1 id="dyslexia">Dyslexia</h1>
+          <h1 id="detectives">Detectives</h1>
         </div>
+        <div id="navDiv">
+          <a class="navItems" style="margin-top: 3%; margin-left: 16%" href="#"
+            >Reading Test</a
+          >
+          <a class="navItems" style="margin-top: 3%" href="#">Game</a>
+          <a class="navItems" style="margin-top: 3%" href="#">Locator</a>
+          <a class="navItems" style="margin-top: 3%" href="#">Tutor</a>
+          <a class="navItems" style="margin-top: 3%" href="#">Community</a>
+          <a class="navItems" style="margin-top: 3%" href="#">Buddy</a>
+          <div style="margin-top: 1.5%; margin-left: 10%">
+            <img id="drawer" src="./app1/drawer.png" alt="404" />
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main style="margin-left: 1em; margin-top: 5em">
+      <div id="mainDiv1">
+        <h1>What is Dyslexia?</h1>
+        <h2>
+          Dyslexia is a condition that affects the ability to read, write, and
+          spell, despite normal intelligence. It can lead to difficulties in
+          academic performance and self-esteem if not addressed. Early
+          intervention is crucial—seek help now to ensure effective support and
+          prevent long-term impacts on learning and development. Don't wait; the
+          sooner you act, the better the outcomes.
+        </h2>
+        <h4>Click below to be a part of our team</h4>
+        <button id="getStarted">
+          Get Started <span id="arrow"> &rarr;</span>
+        </button>
+        <button id="seeMore">See more</button>
+      </div>
     </main>
     <footer>
-        <h2>Dyslexia Detectives &copy;</h2>
-        <a href="https://wa.me/+923111322228" target="_blank"><img id="whatsapp" src="./app1/whatsapp.png"
-                alt="404"></a>
-        <a href="https://www.linkedin.com/in/alichughtai67/" target="_blank"><img id="linkedIn"
-                src="./app1/linkedin.png" alt="404"></a>
+      <h2>Dyslexia Detectives &copy;</h2>
+      <a href="https://wa.me/+923111322228" target="_blank"
+        ><img id="whatsapp" src="./app1/whatsapp.png" alt="404"
+      /></a>
+      <a href="https://www.linkedin.com/in/alichughtai67/" target="_blank"
+        ><img id="linkedIn" src="./app1/linkedin.png" alt="404"
+      /></a>
     </footer>
-</body>
-
+  </body>
 </html>
