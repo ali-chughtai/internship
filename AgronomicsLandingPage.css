@@ -31,9 +31,6 @@ nav div img {
   width: 13rem;
   /* padding-left: 17rem; */
 }
-nav #buttons {
-  /* margin-right: 17rem; */
-}
 nav div button {
   background-color: #f4f4f5;
   padding: 0.7rem;
@@ -71,9 +68,7 @@ main #About-Sec {
 main #About-Sec h1 {
   margin-bottom: 1.5rem;
 }
-main div {
-  /* background-color: aquamarine; */
-}
+
 #imageDiv {
   width: 64.5rem;
   height: 39.5rem;
@@ -139,6 +134,7 @@ main div #AboutAgronomics {
   height: 1px; /* Set the height of the line */
   background-color: #e4e4e7; /* Set the color of the line */
   margin: -0.8rem;
+  width: 100%;
 }
 footer .styled-hr {
   border: none; /* Remove the default border */
