@@ -1,25 +1,62 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Max-Width Example</title>
-  <style>
-    body{
-        background-color: antiquewhite;
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <title>Page Title</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+      .container {
+    width: 66%;
+    margin: 0 auto;
+}
+
+.clearfix {
+    clear: both;
+}
+
+#col1 {
+    height: 200px;
+    background: tomato;
+    width: 60%;
+    float: left;
+}
+
+#col2 {
+    height: 200px;
+    background: steelblue;
+    width: 30%;
+    float: left;
+}
+
+#col3 {
+    height: 200px;
+    background: limegreen;
+    width: 10%;
+    float: left;
+}
+
+@media screen and (max-width: 780px) {
+        #col1 {
+        width: 65%;
     }
-    .container {
-      width: 50%;
-      max-width: 300px;
-      margin: 0 auto;
-      background-color: lightblue;
-      padding: 30px;
+
+    #col2 {
+        width: 35%;
     }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <p>This container has a maximum width of 600px. Resize the browser window to see the effect of max-width.</p>
-  </div>
-</body>
+
+    #col3 {
+        width: 100%;
+    }
+}
+    </style>
+      </head>
+    <body>
+        <section class="container">
+            <div id="col1">First column</div>
+            <div id="col2">Second column</div>
+            <div id="col3">Third column</div>
+            <div class="clearfix"></div>
+        </section>
+    </body>
 </html>
